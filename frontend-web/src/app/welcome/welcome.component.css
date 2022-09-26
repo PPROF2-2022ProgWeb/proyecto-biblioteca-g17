@@ -1,0 +1,44 @@
+.contenedor-welcome {
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    width: 95%;
+    transition: all 0.6s;
+}
+
+.contenedor-welcome-check {
+    position: fixed;
+    top: 35%;
+    width: 80%;
+    left: 20%;
+    transition: all 0.6s;
+}
+
+.titulo-welcome {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo-welcome h4 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.parrafo-welcome, .lista-welcome {
+    padding-left: 20px;
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    float: right;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor-welcome {
+        left: 10%;
+    }
+    .contenedor-welcome-check {
+        z-index: -1;
+    }
+}
