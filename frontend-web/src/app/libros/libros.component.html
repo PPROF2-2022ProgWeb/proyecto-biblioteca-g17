@@ -1,1 +1,34 @@
-<p>libros works!</p>
+<div class="contenedor-libros" id="contenedor-libros">
+    <div class="formulario-busqueda-libro">
+        <form action="/" class="busqueda-libro">
+            <label for="busqueda-titulo">Libros</label> <br>
+            <input type="text" id="busqueda-titulo" name="busqueda-titulo" placeholder="Ingrese el titulo del libro a buscar">
+            <button class="buscar-libro">Buscar</button>
+        </form>
+    </div>
+    <div class="tabla-libros">
+        <table>
+            <thead>
+                <tr>
+                    <th class="dato-id">ID</th>
+                    <th class="dato-titulo">Título</th>
+                    <th class="dato-fecha">Fecha de publicación</th>
+                    <th class="dato-autor">Autor</th>
+                    <th class="dato-categoria">Categoría</th>
+                    <th class="dato-edicion">Edición</th>
+                    <th class="dato-idioma">Idioma</th>
+                    <th class="dato-paginas">Páginas</th>
+                    <th class="dato-stock">Stock</th>
+                    <th class="dato-disponibles">Disponibles</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="contenedor-botones-lb">
+        <button class="nuevo-libro">Nuevo</button>
+        <button class="editar-libro">Editar</button>
+        <button class="borrar-libro">Borrar</button>
+    </div>
+</div>

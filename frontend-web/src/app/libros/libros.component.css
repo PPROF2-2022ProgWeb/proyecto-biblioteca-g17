@@ -1,0 +1,76 @@
+.contenedor-libros {
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    width: 95%;
+    transition: all 0.6s;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contenedor-libros-check {
+    position: fixed;
+    top: 35%;
+    width: 80%;
+    left: 20%;
+    transition: all 0.6s;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.formulario-busqueda-libro {
+    width: 100%;
+}
+
+.busqueda-libro input {
+    width: 70%;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.busqueda-libro button {
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px 12px;
+    background-color: #3D8361;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+.contenedor-botones-lb button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.tabla-libros {
+    width: 100%;
+    max-height:250px;
+    overflow: scroll;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid grey;
+  }
+
+
+th, td {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor-libros {
+        left: 10%;
+    }
+    .contenedor-libros-check {
+        z-index: -1;
+    }
+}
