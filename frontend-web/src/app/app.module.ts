@@ -16,6 +16,7 @@ import { SubirUsuariosComponent } from './subir-usuarios/subir-usuarios.componen
 //Date
 import localeAr from '@angular/common/locales/es-AR';
 import { registerLocaleData } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
 registerLocaleData(localeAr, 'es');
 
 @NgModule({
@@ -33,7 +34,8 @@ registerLocaleData(localeAr, 'es');
     SubirUsuariosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [{provide: LOCALE_ID, useValue: 'es'}],
   bootstrap: [AppComponent]
