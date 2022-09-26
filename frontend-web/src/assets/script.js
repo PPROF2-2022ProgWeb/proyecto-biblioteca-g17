@@ -8,6 +8,7 @@ function changeClass(){
     const devolucion = document.getElementById('contenedor-devoluciones')
     const libros = document.getElementById('contenedor-libros')
     const usuariosProgr = document.getElementById('contenedor-usuarios')
+    const reportes = document.getElementById('contenedor-reportes')
     
     sidebar.classList.toggle('sidebar-check')
     titulo?.classList.toggle('titulo-check')
@@ -24,4 +25,6 @@ function changeClass(){
     libros?.classList.toggle('contenedor-libros-check')
     usuariosProgr?.classList.toggle('contenedor-usuarios')
     usuariosProgr?.classList.toggle('contenedor-usuarios-check')
+    reportes?.classList.toggle('contenedor-reportes')
+    reportes?.classList.toggle('contenedor-reportes-check')
   } 
