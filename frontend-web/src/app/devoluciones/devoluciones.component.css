@@ -1,0 +1,81 @@
+.contenedor-devoluciones {
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    width: 95%;
+    transition: all 0.6s;
+    display: flex;
+}
+
+.contenedor-devoluciones-check {
+    position: fixed;
+    top: 35%;
+    width: 80%;
+    left: 20%;
+    transition: all 0.6s;
+    display: flex;
+}
+
+.box-uno {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 0.5px solid rgb(173, 169, 169);
+    padding-left: 30px;
+}
+
+.titulo h4 {
+    font-size: 23px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.box-dos img {
+    width: 80%;
+}
+
+.box-dos {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-devolucion {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario-devolucion form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-devolucion form input {
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.btn-devolucion {
+    padding: 15px 30px;
+    background-color: #3D8361;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor-devoluciones {
+        left: 10%;
+    }
+    .contenedor-devoluciones-check {
+        z-index: -1;
+    }
+}
