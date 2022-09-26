@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -12,6 +12,11 @@ import { LibrosComponent } from './libros/libros.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { SubirLibrosComponent } from './subir-libros/subir-libros.component';
 import { SubirUsuariosComponent } from './subir-usuarios/subir-usuarios.component';
+
+//Date
+import localeAr from '@angular/common/locales/es-AR';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeAr, 'es');
 
 @NgModule({
   declarations: [
@@ -30,7 +35,7 @@ import { SubirUsuariosComponent } from './subir-usuarios/subir-usuarios.componen
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'es'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
