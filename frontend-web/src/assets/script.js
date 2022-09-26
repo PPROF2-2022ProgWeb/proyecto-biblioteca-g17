@@ -6,6 +6,7 @@ function changeClass(){
     const welcome = document.getElementById('contenedor-welcome')
     const lending = document.getElementById('contenedor-lendings')
     const devolucion = document.getElementById('contenedor-devoluciones')
+    const usuarios = document.getElementById('contenedor-usuarios')
     
     sidebar.classList.toggle('sidebar-check')
     titulo?.classList.toggle('titulo-check')
@@ -18,4 +19,6 @@ function changeClass(){
     lending?.classList.toggle('contenedor-lendings-check')
     devolucion?.classList.toggle('contenedor-devoluciones')
     devolucion?.classList.toggle('contenedor-devoluciones-check')
+    usuarios.classList.toggle('contenedor-usuarios')
+    usuarios.classList.toggle('contenedor-usuarios-check')
   } 
