@@ -1,7 +1,5 @@
 package com.ilib.gestion.models;
 
-import java.sql.Date;
-
 import javax.persistence.*;
 
 @Entity
@@ -12,25 +10,44 @@ public class PrestamoModel {
     @Column(unique = true, nullable = false)
     private Long id;
     
-    private Date fechaSalida;
-    private Date fechaDevolucion;
+    private String fechaSalida;
+    private String fechaDevolucion;
 
+    @ManyToOne()
+    private UsuarioModel usuario;
+    @ManyToOne()
+    private LibroModel libro;
+
+    public UsuarioModel getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(UsuarioModel usuario) {
+        this.usuario = usuario;
+    }
+    
+    public LibroModel getLibro() {
+        return libro;
+    }
+    public void setIdLibro(LibroModel libro) {
+        this.libro = libro;
+    }
     public Long getId() {
         return id;
     }
     public void setId(Long id) {
         this.id = id;
     }
-    public Date getFechaSalida() {
+    public String getFechaSalida() {
         return fechaSalida;
     }
-    public void setFechaSalida(Date fechaSalida) {
+    public void setFechaSalida(String fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
-    public Date getFechaDevolucion() {
+    public String getFechaDevolucion() {
         return fechaDevolucion;
     }
-    public void setFechaDevolucion(Date fechaDevolucion) {
+    public void setFechaDevolucion(String fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
     }
 }

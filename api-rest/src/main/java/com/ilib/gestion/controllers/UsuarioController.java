@@ -37,9 +37,14 @@ public class UsuarioController {
         return usuarioService.obtenerPorId(id);
     }
 
-    @GetMapping("/query")
+    @GetMapping("/queryn")
     public ArrayList<UsuarioModel> obtenerUsuarioPorNombre(@RequestParam("nombre") String nombre){
         return usuarioService.obtenerPorNombre(nombre);
+    }
+
+    @GetMapping("/queryd")
+    public ArrayList<UsuarioModel> obtenerUsuarioPorDocumento(@RequestParam("documento") int documento){
+        return usuarioService.obtenerPorDocumento(documento);
     }
 
     @DeleteMapping(path = "/{id}")

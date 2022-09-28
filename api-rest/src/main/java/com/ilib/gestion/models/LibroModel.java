@@ -1,6 +1,5 @@
 package com.ilib.gestion.models;
 
-import java.util.List;
 
 import javax.persistence.*;
 
@@ -13,16 +12,6 @@ public class LibroModel {
     @Column(unique = true, nullable = false)
     private Long id;
 
-    @OneToMany
-    @JoinColumn(name = "id_libro")
-    private List<PrestamoModel> prestamos;
-
-    public List<PrestamoModel> getPrestamos() {
-        return prestamos;
-    }
-    public void setPrestamos(List<PrestamoModel> prestamos) {
-        this.prestamos = prestamos;
-    }
     private String titulo;
     private String autor;
     private String categoria;
@@ -32,6 +21,11 @@ public class LibroModel {
     private int paginas;
     private int stock;
     private int disponibles;
+
+    public LibroModel(){
+        
+    }
+
 
     public Long getId() {
         return id;
