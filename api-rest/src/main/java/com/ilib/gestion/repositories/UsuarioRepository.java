@@ -10,4 +10,5 @@ import com.ilib.gestion.models.UsuarioModel;
 @Repository
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long>{
     public abstract ArrayList<UsuarioModel> findByNombre(String nombre);
+    public abstract ArrayList<UsuarioModel> findByDocumento(int documento);
 }

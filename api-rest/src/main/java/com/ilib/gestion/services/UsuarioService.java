@@ -30,6 +30,10 @@ public class UsuarioService {
         return usuarioRepository.findByNombre(nombre);
     }
 
+    public ArrayList<UsuarioModel> obtenerPorDocumento(int documento){
+        return usuarioRepository.findByDocumento(documento);
+    }
+
     public boolean eliminarUsuario(Long id){
         try {
             usuarioRepository.deleteById(id);

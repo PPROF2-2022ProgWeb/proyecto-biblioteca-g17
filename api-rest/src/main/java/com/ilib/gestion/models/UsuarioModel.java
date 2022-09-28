@@ -1,6 +1,5 @@
 package com.ilib.gestion.models;
 
-import java.util.List;
 
 import javax.persistence.*;
 
@@ -12,21 +11,15 @@ public class UsuarioModel {
     @Column(unique = true, nullable = false)
     private Long id;
 
-    @OneToMany
-    @JoinColumn(name = "id_usuario")
-    private List<PrestamoModel> prestamos;
-
-    public List<PrestamoModel> getPrestamos() {
-        return prestamos;
-    }
-    public void setPrestamos(List<PrestamoModel> prestamos) {
-        this.prestamos = prestamos;
-    }
     private String nombre;
     private String apellido;
     private String domicilio;
     private String telefono;
     private int documento;
+
+    public UsuarioModel(){
+        
+    }
 
     public Long getId() {
         return id;
