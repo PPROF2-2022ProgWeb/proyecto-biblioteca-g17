@@ -33,12 +33,12 @@ public class LibroController {
     }
 
     @GetMapping(path = "/{id}")
-    public Optional<LibroModel> obtenerUsuarioPorId(@PathVariable("id") Long id){
+    public Optional<LibroModel> obtenerLibroPorId(@PathVariable("id") Long id){
         return libroService.obtenerPorId(id);
     }
 
     @GetMapping("/query")
-    public ArrayList<LibroModel> obtenerUsuarioPorNombre(@RequestParam("titulo") String titulo){
+    public ArrayList<LibroModel> obtenerLibroPorTitulo(@RequestParam("titulo") String titulo){
         return libroService.obtenerPorTitulo(titulo);
     }
 
