@@ -1,10 +1,11 @@
 .contenedor-lendings {
-    position: fixed;
+    position: absolute;
     top: 35%;
     left: 20%;
     width: 80%;
     transition: all 0.6s;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .box-uno {
@@ -61,3 +62,13 @@
     color: #fff;
     border: none;
 }
+
+@media screen and (max-width: 1000px) {
+    .box-uno {
+     width: 100%;
+    }
+ 
+    .box-dos {
+     width: 100%;
+    }
+ }

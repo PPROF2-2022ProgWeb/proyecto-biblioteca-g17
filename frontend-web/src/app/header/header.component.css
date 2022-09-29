@@ -1,5 +1,5 @@
 .contenedor-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 20%;
     width: 80%;
