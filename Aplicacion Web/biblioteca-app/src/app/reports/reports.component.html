@@ -1,0 +1,25 @@
+<div class="reports-contenedor active" id="reports">
+    <div class="table-contenedor">
+        <table class="reports-table">
+            <caption>Reportes</caption>
+            <tr>
+                <thead>
+                    <th>ID</th>
+                    <th>ID Usuario</th>
+                    <th>ID Libro</th>
+                    <th>Fecha de salida</th>
+                    <th>Fecha de devolución</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let reporte of reportes">
+                        <td>{{reporte.id}}</td>
+                        <td>{{reporte.usuario}}</td>
+                        <td>{{reporte.libro}}</td>
+                        <td>{{reporte.fechaSalida}}</td>
+                        <td>{{reporte.fechaDevolucion}}</td>
+                    </tr>
+                </tbody>
+            </tr>
+        </table>
+    </div>
+</div>

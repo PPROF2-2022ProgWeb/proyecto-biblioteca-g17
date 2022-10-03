@@ -1,0 +1,97 @@
+.lendings-contenedor {
+    width: 100vw;
+    padding: 10px 30px;
+    position: absolute;
+    top:32vh;
+    left: 0vw;
+    z-index: -1;
+    transition: all 0.6s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.active {
+    width: 80vw;
+    left: 20vw;
+}
+
+.box-uno {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 0.5px solid rgb(173, 169, 169);
+    justify-content: center;
+}
+
+.titulo h4 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.box-uno .img {
+    display: flex;
+    justify-content: center;
+}
+
+.box-uno .img img {
+    width: 70%;
+}
+
+.box-dos {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.979);
+}
+
+.formulario-prestamo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario-prestamo form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-prestamo form input {
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid #8758FF;
+    margin-bottom: 20px;
+}
+
+.btn-lending {
+    padding: 15px 30px;
+    background-color: #8758FF;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+@media screen and (max-width: 764px) {
+    
+    .active {
+        width: 100vw;
+        left: 0;
+    }
+
+    .lendings-contenedor, .active {
+        flex-wrap: wrap;
+    } 
+    .box-uno {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .box-dos {
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+<div class="register-contenedor active" id="register-user">
+    <div class="formulario-registro">
+        <div class="titulo-registro">
+            <h4>Registra un usuario</h4>
+        </div>
+        <form [formGroup]="nuevoForm" (ngSubmit)="postForm(nuevoForm.value)" class="registro">
+            <div class="box-uno">
+                <div class="contenedor-input">
+                    <label for="user-nombre">Nombre</label>
+                    <input type="text" id="user-nombre" name="user-nombre" placeholder="Ingrese el nombre del usuario" formControlName="nombre" required>
+                </div>
+                <div class="contenedor-input">
+                    <label for="user-apellido">Apellido</label>
+                    <input type="text" id="user-apellido" name="user-apellido" placeholder="Ingrese el apellido del usuario" formControlName="apellido" required>
+                </div>
+                <div class="contenedor-input">
+                    <label for="user-documento">Documento</label>
+                <input type="number" id="user-documento" name="user-documento" placeholder="Ingrese el documento del usuario" formControlName="documento" required>
+                </div>
+            </div>
+           <div class="box-dos">
+            <div class="contenedor-input">
+                <label for="user-domicilio">Domicilio</label>
+                <input type="text" id="user-domicilio" name="user-domicilio" placeholder="Ingrese el domicilio del usuario" formControlName="domicilio" required>
+            </div>
+            <div class="contenedor-input">
+                <label for="user-telefono">Telefono</label>
+                <input type="number" id="user-telefono" name="user-telefono" placeholder="Ingrese el telefono del usuario" formControlName="telefono" required>
+            </div>
+            <div class="contenedor-btn">
+                <button type="submit" class="btn-register">Registrar</button>
+            </div>            
+           </div>
+        </form>
+    </div>
+</div>

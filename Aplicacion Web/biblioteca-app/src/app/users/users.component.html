@@ -1,0 +1,37 @@
+<div class="users-contenedor active" id="users">
+    <div class="table-contenedor">
+        <div class="formulario-busqueda-usuario">
+            <form class="busqueda-usuario">
+                <label for="busqueda-nombre">Usuarios</label> <br>
+                <input [(ngModel)]="userName" type="text" id="busqueda-nombre" name="busqueda-nombre" placeholder="Ingrese el nombre del usuario">
+                <button type="submit" class="buscar-usuario" (click)="buscarUsuario()">Buscar</button>
+            </form>
+            <div class="nuevo-usuario">
+                <a [routerLink]="['../registro']" class="crear-usuario"><button class="button-nuevo-usuario" (click)="nuevoUsuario()">Nuevo Usuario</button></a>
+            </div>
+        </div>
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Domicilio</th>
+                    <th>Telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios" (click)="editarUsuario(usuario.id)">
+                    <td>{{usuario.id}}</td>
+                    <td>{{usuario.documento}}</td>
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.apellido}}</td>
+                    <td>{{usuario.domicilio}}</td>
+                    <td>{{usuario.telefono}}</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</div>

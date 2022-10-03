@@ -1,0 +1,62 @@
+.reports-contenedor {
+    width: 100vw;
+    padding-top: 20px;
+    position: absolute;
+    top:32vh;
+    left: 0vw;
+    z-index: -1;
+    transition: all 0.6s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    width: 80vw;
+    left: 20vw;
+}
+
+.table-contenedor {
+    width: 90%;
+}
+
+.reports-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+caption {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align:left;
+}
+
+th {
+    padding: 10px;
+    background-color: #181818;
+    color: #fff;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    background-color: #1818189d;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .active {
+        width: 100vw;
+        left: 0;
+    }
+
+    .reports-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

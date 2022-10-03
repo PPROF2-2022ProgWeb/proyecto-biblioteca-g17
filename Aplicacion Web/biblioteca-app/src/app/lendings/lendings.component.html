@@ -1,0 +1,21 @@
+<div class="lendings-contenedor active" id="lendings">
+    <div class="box-uno">
+        <div class="titulo">
+            <h4>Nuevo Préstamo</h4>
+        </div>
+        <div class="img">
+            <img src="../../assets/img/prestamo.gif" alt="prestamo" class="imagen">
+        </div>
+    </div>
+    <div class="box-dos">
+        <div class="formulario-prestamo">
+            <form [formGroup]="nuevoForm" (ngSubmit)="postForm(nuevoForm.value, fechaSalida, fechaDevolucion)" class="prestamo">
+                <label for="usuario-prestamo">ID Usuario</label>
+                <input type="number" id="usuario-prestamo" name="usuario-prestamo" placeholder="Ingrese el ID del usuario" required formControlName="usuario">
+                <label for="libro-prestamo">ID Libro</label>
+                <input type="number" id="libro-prestamo" name="libro-prestamo" placeholder="Ingrese el ID del libro a prestar" required formControlName="libro">
+                <button type="submit" class="btn-lending">Prestar</button>
+            </form>
+        </div>
+    </div>
+</div>

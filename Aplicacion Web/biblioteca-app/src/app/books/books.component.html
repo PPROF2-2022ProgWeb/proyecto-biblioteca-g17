@@ -1,0 +1,40 @@
+<div class="books-contenedor active" id="books">
+    <div class="table-contenedor">
+        <div class="formulario-busqueda-libro">
+            <form action="/" class="busqueda-libro">
+                <label for="busqueda-titulo">Libros</label> <br>
+                <input [(ngModel)]="bookTitle" type="text" id="busqueda-titulo" name="busqueda-titulo" placeholder="Ingrese el título del libro">
+                <button type="submit" class="buscar-titulo" (click)="buscarLibro()">Buscar</button>
+            </form>
+            <div class="nuevo-libro">
+                <a [routerLink]="['../subir-libro']" class="crear-libro"><button class="button-nuevo-libro" (click)="nuevoLibro()">Nuevo Libro</button></a>
+            </div>
+        </div>
+        <table class="books-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoría</th>
+                    <th>Edición</th>
+                    <th>Idioma</th>
+                    <th>Stock</th>
+                    <th>Disponibles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let libro of libros" (click)="editarLibro(libro.id)">
+                    <td>{{libro.id}}</td>
+                    <td>{{libro.titulo}}</td>
+                    <td>{{libro.autor}}</td>
+                    <td>{{libro.categoria}}</td>
+                    <td>{{libro.edicion}}</td>
+                    <td>{{libro.idioma}}</td>
+                    <td>{{libro.stock}}</td>
+                    <td>{{libro.disponibles}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

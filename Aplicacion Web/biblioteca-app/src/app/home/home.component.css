@@ -1,0 +1,37 @@
+.home-contenedor {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 10px 30px;
+    position: absolute;
+    top:32vh;
+    left: 0vw;
+    z-index: -1;
+    transition: all 0.6s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-titulo{
+    width: 100%;
+}
+
+.contenedor-informacion {
+    width: 100%;
+}
+
+.contenedor-informacion img {
+    margin-top: -20px;
+    float: right;
+}
+
+.active {
+    box-sizing: border-box;
+    width: 80vw;
+    left: 20vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .active {
+        width: 100vw;
+        left: 0;
+    }
+}

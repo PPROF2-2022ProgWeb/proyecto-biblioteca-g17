@@ -1,0 +1,110 @@
+.books-contenedor {
+    width: 100vw;
+    padding-top: 20px;
+    position: absolute;
+    top:32vh;
+    left: 0vw;
+    z-index: -1;
+    transition: all 0.6s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    width: 80vw;
+    left: 20vw;
+}
+
+.formulario-busqueda-libro {
+    width: 100%;
+    position: relative;
+}
+
+.nuevo-libro {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+.nuevo-libro a button {
+    padding: 10px 12px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #8758FF;
+}
+
+.busqueda-libro input {
+    width: 70%;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.busqueda-libro button {
+    margin-left: 10px;
+    padding: 10px 12px;
+    background-color: #181818;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.table-contenedor {
+    width: 90%;
+}
+
+.books-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align:left;
+}
+
+th {
+    padding: 10px;
+    background-color: #181818;
+    color: #fff;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    background-color: #1818189d;
+    color: #fff;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+    .active {
+        width: 100vw;
+        left: 0;
+    }
+
+    .nuevo-libro {
+        top: -15px;
+    }
+
+    .books-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,33 @@
+.header-contenedor {
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slogan-contenedor{
+    margin-left: 80px;
+    margin-top: 25px;
+}
+
+.info-contenedor {
+    background-color: #8758FF;
+    padding: 20px;
+    padding-left: 100px;
+    color: #fff;
+}
+
+.active {
+    width: 80vw;
+    left: 20vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .active {
+        width: 100vw;
+        left: 0;
+    }
+}

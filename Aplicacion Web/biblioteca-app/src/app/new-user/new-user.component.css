@@ -1,0 +1,83 @@
+.register-contenedor {
+    width: 100vw;
+    position: absolute;
+    top:32vh;
+    left: 0vw;
+    z-index: -1;
+    transition: all 0.6s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 68vh;
+}
+
+.active {
+    width: 80vw;
+    left: 20vw;
+}
+
+.formulario-registro {
+    width: 80%;
+    padding: 20px;
+    max-height: 100%;
+}
+
+.titulo-registro h4 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.formulario-registro form {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-uno, .box-dos {
+    width: 40%;
+}
+
+.box-uno div, .box-dos div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-input label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contenedor-input input {
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.contenedor-btn button {
+    padding: 10px 12px;
+    background-color: #181818;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .active {
+        width: 100vw;
+        left: 0;
+    }
+    
+    .box-uno, .box-dos {
+        width: 100%;
+    }
+
+    .formulario-registro form {
+        flex-direction: column;
+    }
+}

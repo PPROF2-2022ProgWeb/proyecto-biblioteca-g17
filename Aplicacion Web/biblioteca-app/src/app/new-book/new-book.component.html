@@ -1,0 +1,44 @@
+<div class="new-book-contenedor active" id="register-book">
+    <div class="formulario-new-book">
+        <div class="titulo-new-book">
+            <h4>Subir libro</h4>
+        </div>
+        <form [formGroup]="nuevoForm" (ngSubmit)="postForm(nuevoForm.value)" class="new-book">
+            <div class="box-uno">
+                <div class="contenedor-input">
+                    <label for="book-titulo">Título</label>
+                    <input type="text" id="book-titulo" name="book-titulo" placeholder="Ingrese el título del libro" required formControlName="titulo">
+                </div>
+                <div class="contenedor-input">
+                    <label for="book-autor">Autor</label>
+                    <input type="text" id="book-autor" name="book-autor" placeholder="Ingrese el autor del libro" required formControlName="autor">
+                </div>
+                <div class="contenedor-input">
+                    <label for="book-categoria">Categoría</label>
+                <input type="text" id="book-categoria" name="book-categoria" placeholder="Ingrese la categoría del libro" required formControlName="categoria">
+                </div>
+                <div class="contenedor-input">
+                    <label for="book-edicion">Edición</label>
+                    <input type="text" id="book-edicion" name="book-edicion" placeholder="Ingrese la edición del libro" required formControlName="edicion">
+                </div>
+            </div>
+           <div class="box-dos">
+            <div class="contenedor-input">
+                <label for="book-idioma">Idioma</label>
+                <input type="text" id="book-idioma" name="book-idioma" placeholder="Ingrese el idioma del libro" required formControlName="idioma">
+            </div>
+            <div class="contenedor-input">
+                <label for="book-stock">Stock</label>
+                <input type="number" id="book-stock" name="book-stock" placeholder="Ingrese el stock del libro" required formControlName="stock">
+            </div>
+            <div class="contenedor-input">
+                <label for="book-disponibles">Disponibles</label>
+                <input type="number" id="book-disponibles" name="book-disponibles" placeholder="Ingrese la cantidad disponible" required formControlName="disponibles">
+            </div>
+            <div class="contenedor-btn">
+                <button type="submit" class="btn-register">Subir</button>
+            </div>            
+           </div>
+        </form>
+    </div>
+</div>
