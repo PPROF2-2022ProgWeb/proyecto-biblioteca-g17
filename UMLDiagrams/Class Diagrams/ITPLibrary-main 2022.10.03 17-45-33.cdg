@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ITPLibrary-main">
+  <ClassDiagramComponents>
+    <Class name="Books" package="itp_library" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="bid" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="button" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="delete" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="edit" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="nuevo" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="bidMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel3MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nuevoMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nuevoMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nuevoMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="deleteMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="deleteMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jTable1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="deleteMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="bidActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="GetBooks" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Connect" package="itp_library" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="private" isStatic="true"/>
+        <Field name="driver" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="user" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="pass" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="db" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="url" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getConnection" returnType="Connection" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Dashboard" package="itp_library" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="xMouse" type="int" visibility="package"/>
+        <Field name="yMouse" type="int" visibility="package"/>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="Background" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Header" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Menu" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Title" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="app_name" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="btn_books" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="btn_lends" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="btn_prin" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="btn_reports" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="btn_returns" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="btn_users" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="content" type="javax.swing.JPanel" visibility="public" isStatic="true"/>
+        <Field name="exit" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="fecha" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="red_squr" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="slogan" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="formWindowActivated" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="TitleMouseDragged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="TitleMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="exitMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_prinMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_lendsMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_returnsMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_usersMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_booksMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_reportsMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="red_squrMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_lendsMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_lendsMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_prinMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_prinMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_returnsMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_returnsMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_usersMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_usersMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_booksMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_booksMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_reportsMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btn_reportsMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="red_squrMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="red_squrMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="exitMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="exitMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Lendings" package="itp_library" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="Image" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="book_id" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="button" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="folio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator3" type="javax.swing.JSeparator" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="book_idActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="folioMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="book_idMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="UserExist" returnType="boolean" visibility="public">
+          <Argument type="int" name="doc"/>
+        </Method>
+        <Method name="BookExist" returnType="boolean" visibility="public">
+          <Argument type="String" name="bookid"/>
+        </Method>
+        <Method name="BookAvailable" returnType="boolean" visibility="public">
+          <Argument type="String" name="bookid"/>
+        </Method>
+        <Method name="CheckSanction" returnType="boolean" visibility="public">
+          <Argument type="int" name="userid"/>
+          <Argument type="String" name="bookid"/>
+        </Method>
+        <Method name="CheckLending" returnType="boolean" visibility="public">
+          <Argument type="int" name="userid"/>
+          <Argument type="String" name="bookid"/>
+        </Method>
+        <Method name="InsertLending" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bookid"/>
+        </Method>
+        <Method name="Devolutions" returnType="void" visibility="public">
+          <Argument type="int" name="fo"/>
+          <Argument type="String" name="bookid"/>
+        </Method>
+        <Method name="getFechaActual" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="sumarFechasDias" returnType="java.sql.Date" visibility="public" isStatic="true">
+          <Argument type="java.util.Date" name="fch"/>
+          <Argument type="int" name="dias"/>
+        </Method>
+        <Method name="diferenciasDeFechas" returnType="int" visibility="public" isStatic="true" isSynchronized="true">
+          <Argument type="Date" name="fechaInicial"/>
+          <Argument type="Date" name="fechaFinal"/>
+        </Method>
+        <Method name="deStringToDate" returnType="java.util.Date" visibility="public" isStatic="true" isSynchronized="true">
+          <Argument type="String" name="fecha"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="itp_library" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="Image" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Reports" package="itp_library" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="button" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jTable1InputMethodTextChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.InputMethodEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="GetReports" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Returns" package="itp_library" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="Inter" type="Lendings" visibility="package"/>
+        <Field name="Image" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="book_id" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="button" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="folio" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator3" type="javax.swing.JSeparator" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="book_idActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="folioMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="book_idMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UpBooks" package="itp_library" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="edition" type="boolean" visibility="package"/>
+        <Field name="origId" type="String" visibility="package"/>
+        <Field name="Text10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="author" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="available" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="button" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="category" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="date" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="edit" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator10" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator11" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator12" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator14" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator16" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator3" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator5" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator7" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator8" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator9" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="lang" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="pages" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="stock" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="title" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="bid"/>
+          <Argument type="String" name="btitle"/>
+          <Argument type="String" name="bdate"/>
+          <Argument type="String" name="bauthor"/>
+          <Argument type="String" name="bcategory"/>
+          <Argument type="String" name="bedit"/>
+          <Argument type="String" name="blang"/>
+          <Argument type="String" name="bpages"/>
+          <Argument type="String" name="bstock"/>
+          <Argument type="String" name="bavai"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="buttonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="titleMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="titleActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="dateMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="dateActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="authorMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="authorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="categoryMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="categoryActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="editMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="langMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="langActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="pagesMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="pagesActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="stockMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="stockActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="availableMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="availableActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="InsertBook" returnType="void" visibility="public">
+          <Argument type="String" name="titu"/>
+          <Argument type="String" name="fech"/>
+          <Argument type="String" name="auth"/>
+          <Argument type="String" name="cate"/>
+          <Argument type="String" name="ed"/>
+          <Argument type="String" name="idiom"/>
+          <Argument type="int" name="pags"/>
+          <Argument type="int" name="stck"/>
+          <Argument type="int" name="avai"/>
+        </Method>
+        <Method name="EditBook" returnType="void" visibility="public">
+          <Argument type="String" name="titu"/>
+          <Argument type="String" name="fech"/>
+          <Argument type="String" name="auth"/>
+          <Argument type="String" name="cate"/>
+          <Argument type="String" name="ed"/>
+          <Argument type="String" name="idiom"/>
+          <Argument type="int" name="pags"/>
+          <Argument type="int" name="stck"/>
+          <Argument type="int" name="avai"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UpUsers" package="itp_library" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="edit" type="boolean" visibility="package"/>
+        <Field name="idus" type="String" visibility="package"/>
+        <Field name="Text1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Text5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ap1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ap2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="button" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="dom" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator3" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator4" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator5" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator6" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="name" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tel" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="usid"/>
+          <Argument type="String" name="usname"/>
+          <Argument type="String" name="usap1"/>
+          <Argument type="String" name="usdoc"/>
+          <Argument type="String" name="usdom"/>
+          <Argument type="String" name="ustel"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="telActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="domMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="telMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nameMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ap1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ap1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="nameActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="domActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ap2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ap2MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="InsertUser" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="app"/>
+          <Argument type="String" name="doc"/>
+          <Argument type="String" name="dom"/>
+          <Argument type="String" name="tel"/>
+        </Method>
+        <Method name="EditUser" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="app"/>
+          <Argument type="String" name="doc"/>
+          <Argument type="String" name="dom"/>
+          <Argument type="String" name="tel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Users" package="itp_library" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="conn" type="Connect" visibility="package"/>
+        <Field name="reg" type="Connection" visibility="package"/>
+        <Field name="Title" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="body" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="delete" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="edit" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="nuevo" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="search" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="usrnm" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="usrnmMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="deleteMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="deleteMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nuevoMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nuevoMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="searchMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="searchMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="nuevoMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="usrnmMouseReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jTable1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="deleteMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="editMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="searchMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel3MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="resetColor" returnType="void" visibility="package">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="GetUsers" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="conn" source="itp_library.Books" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="itp_library.Connect" target="itp_library.Connect" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conn" source="itp_library.Dashboard" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conn" source="itp_library.Lendings" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conn" source="itp_library.Reports" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conn" source="itp_library.UpUsers" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Inter" source="itp_library.Returns" target="itp_library.Lendings" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conn" source="itp_library.Users" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conn" source="itp_library.UpBooks" target="itp_library.Connect" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
