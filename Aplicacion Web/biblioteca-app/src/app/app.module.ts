@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID,NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { registerLocaleData } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -20,6 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { EditBookComponent } from './edit-book/edit-book.component';
+import localeEsAr from '@angular/common/locales/es-AR';
+
+registerLocaleData(localeEsAr, 'es-Ar');
 
 
 @NgModule({
@@ -47,7 +51,7 @@ import { EditBookComponent } from './edit-book/edit-book.component';
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'es-Ar' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
